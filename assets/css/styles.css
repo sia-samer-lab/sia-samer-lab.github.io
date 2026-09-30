@@ -145,7 +145,7 @@ button, input, textarea { font: inherit; }
 .person { overflow: hidden; background: var(--white); box-shadow: 0 15px 40px rgba(18,35,49,.08); }
 .person img { width: 100%; aspect-ratio: 4 / 4.2; object-fit: cover; object-position: center top; background: #dce5e9; transition: transform .55s ease; }
 .person img.person-photo--top { object-position: center 70%; }
-.person img.person-photo--higher { object-position: center 55%; }
+.person img.person-photo--higher { object-position: center 50%; }
 .person img.person-photo--center { object-position: 75% center; }
 .people-grid > .person:last-child { grid-column: 2 / 4; width: calc(50% - 10px); justify-self: center; }
 .person-photo-placeholder { display: grid; aspect-ratio: 1 / 1; place-items: center; color: var(--cyan-300); background: var(--navy-800); font-size: 1.5rem; font-weight: 800; letter-spacing: .12em; }
