@@ -15,7 +15,7 @@
   <header class="site-header" data-header>
     <div class="container nav-wrap">
       <a class="brand" href="#home" aria-label="SAMER Lab home">
-        <img src="assets/images/lab_logo.png" alt="SAMER Lab">
+        <span class="brand-name"><strong>SAMER</strong><small>Lab</small></span>
       </a>
 
       <button class="menu-button" type="button" aria-expanded="false" aria-controls="site-navigation" data-menu-button>
@@ -24,6 +24,7 @@
       </button>
 
       <nav id="site-navigation" class="site-nav" aria-label="Primary navigation" data-navigation>
+        <span class="nav-mark" aria-hidden="true"><img src="assets/images/lab_logo.png" alt=""></span>
         <a href="#about">About</a>
         <a href="#research">Research</a>
         <a href="#team">Team</a>
@@ -37,7 +38,7 @@
     <section id="home" class="hero">
       <div class="hero-overlay"></div>
       <div class="container hero-content">
-        <p class="eyebrow">Space Robotics · Autonomous Systems · Exploration</p>
+        <p class="eyebrow"> Space Robotics · Autonomous Systems · Exploration</p>
         <h1>Space Autonomous Manipulation and Exploration Robotics Lab</h1>
         <p class="hero-lead">Advancing autonomous robotic systems for planetary exploration and orbital operations.</p>
         <div class="hero-actions">
@@ -49,13 +50,30 @@
     </section>
 
     <section id="about" class="section section-light">
-      <div class="container narrow">
-        <p class="section-kicker">About us</p>
-        <h2>Robotics for challenging space environments</h2>
-        <p class="section-intro">
-          The Space Autonomous Manipulation and Exploration Robotics (SAMER) Lab develops robotic systems for space applications. Our research focuses on autonomous manipulation, mobility, and exploration technologies that enable robots to operate effectively in challenging space environments.
-        </p>
-      </div>
+      <div class="container about-layout">
+        <div>
+          <p class="section-kicker">About us</p>
+          <h2>Robotics for challenging space environments</h2>
+        </div>
+        <div class="about-copy">
+          <p class="lab-founded">Founded in April 2025</p>
+          <p class="section-intro">
+            The Space Autonomous Manipulation and Exploration Robotics (SAMER) Lab develops robotic systems for space applications. Our research focuses on autonomous manipulation, mobility, and exploration technologies that enable robots to operate effectively in challenging space environments. By integrating robotics, artificial intelligence, and space engineering, we aim to develop reliable and adaptable systems for in-orbit servicing, planetary exploration (Lunar, Mars, and Asteriod Mission), and future space operations.
+          </p>
+          <p class="about-method">We bring together perception, planning, control, and intelligent decision-making to help robots operate with greater autonomy and reliability in orbit and on planetary surfaces.</p>
+
+          <details class="name-story">
+            <summary>
+              <span class="name-story-label">The meaning behind SAMER</span>
+              <span class="summary-hint">Read the story</span>
+            </summary>
+            <div class="name-story-content">
+              <h3>Different people, one community.</h3>
+              <p>Beyond its role as an acronym, SAMER also carries a cultural meaning. The name playfully echoes “same” and the Chinese ideal of <em>datong</em> (大同)—a community built on harmony, mutual support, and shared progress. At SAMER Lab, people from different backgrounds learn from one another, help one another, and grow together. Everyone who joins becomes part of the same team and the same family.</p>
+            </div>
+          </details>
+          </div>
+        </div>
     </section>
 
     <section class="feature-section" aria-label="Core research themes">
@@ -92,34 +110,46 @@
 
         <div class="research-grid">
           <article class="research-card">
-            <span>01</span>
-            <h3>Autonomous manipulation</h3>
-            <p>Algorithms and robotic systems for assembly, maintenance, and sample handling with limited human intervention.</p>
+            <img src="assets/images/autonomous_manipulation.jpg" alt="Robotic system for autonomous manipulation" loading="lazy">
+            <div class="research-card-content">
+              <div class="research-card-heading"><h3>Autonomous manipulation</h3></div>
+              <p>Algorithms and robotic systems for assembly, maintenance, and sample handling with limited human intervention.</p>
+            </div>
           </article>
           <article class="research-card">
-            <span>02</span>
-            <h3>Planetary exploration</h3>
-            <p>Robust robotic platforms for autonomous navigation and scientific investigation on planetary surfaces.</p>
+            <img src="assets/images/planetary_exploration.jpg" alt="Robotic system for planetary exploration" loading="lazy">
+            <div class="research-card-content">
+              <div class="research-card-heading"><h3>Planetary exploration</h3></div>
+              <p>Robust robotic platforms for autonomous navigation and scientific investigation on planetary surfaces.</p>
+            </div>
           </article>
           <article class="research-card">
-            <span>03</span>
-            <h3>AI for space robotics</h3>
-            <p>Machine learning, perception, and decision-making methods for uncertain and unstructured environments.</p>
+            <img src="assets/images/ai_for_space_robotics.png" alt="AI system for space robotics" loading="lazy">
+            <div class="research-card-content">
+              <div class="research-card-heading"><h3>AI for space robotics</h3></div>
+              <p>Machine learning, perception, and decision-making methods for uncertain and unstructured environments.</p>
+            </div>
           </article>
           <article class="research-card">
-            <span>04</span>
-            <h3>Orbital servicing</h3>
-            <p>Robotic technologies for satellite servicing, repair, refueling, and responsible debris removal.</p>
+            <img src="assets/images/orbital_servicing.jpg" alt="Robotic system for orbital servicing" loading="lazy">
+            <div class="research-card-content">
+              <div class="research-card-heading"><h3>Orbital servicing</h3></div>
+              <p>Robotic technologies for satellite servicing, repair, refueling, and responsible debris removal.</p>
+            </div>
           </article>
           <article class="research-card">
-            <span>05</span>
-            <h3>Extreme-environment robotics</h3>
-            <p>Mechanisms and control strategies designed for vacuum, radiation, temperature extremes, and difficult terrain.</p>
+            <img src="assets/images/extreme_environment_robotics.jpg" alt="Robotic system for extreme environments" loading="lazy">
+            <div class="research-card-content">
+              <div class="research-card-heading"><h3>Extreme-environment robotics</h3></div>
+              <p>Mechanisms and control strategies designed for vacuum, radiation, temperature extremes, and difficult terrain.</p>
+            </div>
           </article>
           <article class="research-card">
-            <span>06</span>
-            <h3>Multi-robot systems</h3>
-            <p>Coordination and collaboration strategies for teams of robots carrying out complex space missions.</p>
+            <img src="assets/images/multi_robot_system.jpg" alt="Multi-robot system for space missions" loading="lazy">
+            <div class="research-card-content">
+              <div class="research-card-heading"><h3>Multi-robot systems</h3></div>
+              <p>Coordination and collaboration strategies for teams of robots carrying out complex space missions.</p>
+            </div>
           </article>
         </div>
       </div>
@@ -141,35 +171,88 @@
             <div>
               <p class="person-role">Director &amp; Principal Investigator</p>
               <h3>Prof. Weijia Zhou</h3>
+              <p class="mentor-bio">Prof. Weijia Zhou is a Director and Principal Investigator at the Shenyang Institute of Automation, CAS. He leads space-robotics research and has contributed to major missions including Shenzhou-7 and robotic-arm technologies for the China Space Station.</p>
+            </div>
+          </article>
+          <article class="person person-lead">
+            <img src="assets/images/wei_zhang.png" alt="Prof. Wei Zhang" loading="lazy">
+            <div>
+              <p class="person-role">Director &amp; Principal Investigator</p>
+              <h3>Prof. Wei Zhang</h3>
+              <p class="mentor-bio">Prof. Wei Zhang is a Director and Principal Investigator at the Shenyang Institute of Automation, CAS. He has led key technologies for the China Space Station glovebox and the Chang'e-5 lunar panoramic camera turntable, alongside research in space automation.</p>
             </div>
           </article>
         </div>
 
-        <h3 class="group-title">Research assistants</h3>
+        <h3 class="group-title">Research members</h3>
         <div class="people-grid">
           <article class="person">
             <img src="assets/images/zhiyue_fang.jpg" alt="Zhiyue Fang" loading="lazy">
-            <div><h3>Zhiyue Fang</h3><p>PhD Candidate</p></div>
+            <div><h3>Zhiyue Fang</h3><p>PhD Candidate</p><p class="member-bio">Hopping robot design and control</p></div>
           </article>
           <article class="person">
             <img src="assets/images/yaowei_wang.jpg" alt="Yaowei Wang" loading="lazy">
-            <div><h3>Yaowei Wang</h3><p>PhD Candidate</p></div>
-          </article>
-          <article class="person">
-            <img src="assets/images/ran_liu.jpg" alt="Ran Liu" loading="lazy">
-            <div><h3>Ran Liu</h3><p>PhD Candidate</p></div>
+            <div><h3>Yaowei Wang</h3><p>PhD Candidate</p><p class="member-bio">Modular robot mechanism design and control</p></div>
           </article>
           <article class="person">
             <img src="assets/images/yongxu_lu.jpg" alt="Yongxu Lu" loading="lazy">
-            <div><h3>Yongxu Lu</h3><p>Master Student</p></div>
-          </article>
-          <article class="person">
-            <img src="assets/images/shaojie_wang.jpg" alt="Shaojie Wang" loading="lazy">
-            <div><h3>Shaojie Wang</h3><p>Master Student</p></div>
+            <div><h3>Yongxu Lu</h3><p>Master Student</p><p class="member-bio">Bimanual robotics trajectory planning</p></div>
           </article>
           <article class="person">
             <img src="assets/images/fuhao_li.jpg" alt="Fuhao Li" loading="lazy">
-            <div><h3>Fuhao Li</h3><p>Master Student</p></div>
+            <div><h3>Fuhao Li</h3><p>Master's Student</p><p class="member-bio">Spherical robot design and control</p></div>
+          </article>
+          <article class="person">
+            <img src="assets/images/shaojie_wang.jpg" alt="Shaojie Wang" loading="lazy">
+            <div><h3>Shaojie Wang</h3><p>PhD Candidate</p><p class="member-bio">Bimanual robotics manipulation</p></div>
+          </article>
+          <article class="person">
+            <img src="assets/images/yilin_fang.jpg" alt="Yilin Fang" loading="lazy">
+            <div><h3>Yilin Fang</h3><p>PhD Candidate</p><p class="member-bio">Trajectory planning and navigation</p></div>
+          </article>
+          <article class="person">
+            <img class="person-photo--top" src="assets/images/pengcheng_lin.jpg" alt="Pengcheng Lin" loading="lazy">
+            <div><h3>Pengcheng Lin</h3><p>Master's Student</p><p class="member-bio">Bimanual robotics reinforcement learning</p></div>
+          </article>
+          <article class="person">
+            <img src="assets/images/zeyu_jian.jpg" alt="Zeyu Jian" loading="lazy">
+            <div><h3>Zeyu Jian</h3><p>PhD Candidate</p><p class="member-bio">Multi-robot collaboration and embodied control</p></div>
+          </article>
+          <article class="person">
+            <img src="assets/images/haoning_wang.jpg" alt="Haoning Wang" loading="lazy">
+            <div><h3>Haoning Wang</h3><p>PhD Candidate</p><p class="member-bio">Quadruped robotics reinforcement learning</p></div>
+          </article>
+          <article class="person">
+            <img src="assets/images/zeyang_tang.jpg" alt="Zeyang Tang" loading="lazy">
+            <div><h3>Zeyang Tang</h3><p>PhD Candidate</p><p class="member-bio">Dexterous hand manipulation</p></div>
+          </article>
+          <article class="person">
+            <img src="assets/images/haowei_ren.jpg" alt="Haowei Ren" loading="lazy">
+            <div><h3>Haowei Ren</h3><p>PhD Candidate</p><p class="member-bio">Embodied manipulation with robotic arms</p></div>
+          </article>
+          <article class="person">
+            <img class="person-photo--top" src="assets/images/zhi_li.jpg" alt="Zhi Li" loading="lazy">
+            <div><h3>Zhi Li</h3><p>Master's Student</p><p class="member-bio">Reconfigurable manipulator control</p></div>
+          </article>
+          <article class="person">
+            <img src="assets/images/yichen_liang.jpg" alt="Yichen Liang" loading="lazy">
+            <div><h3>Yichen Liang</h3><p>Master's Student</p><p class="member-bio">Quadruped guide-dog robotics control</p></div>
+          </article>
+          <article class="person">
+            <img class="person-photo--center" src="assets/images/hanqing_zhang.jpg" alt="Zhan Hanqing" loading="lazy">
+            <div><h3>Zhan Hanqing</h3><p>Undergraduate Student</p><p class="member-bio">To be determined.</p></div>
+          </article>
+          <article class="person">
+            <img src="assets/images/songyan_li.jpg" alt="Songyan Li" loading="lazy">
+            <div><h3>Songyan Li</h3><p>Undergraduate Student</p><p class="member-bio">To be determined.</p></div>
+          </article>
+          <article class="person">
+            <img src="assets/images/shengkai_yan.jpg" alt="Shengkai Yan" loading="lazy">
+            <div><h3>Shengkai Yan</h3><p>Undergraduate Student</p><p class="member-bio">To be determined.</p></div>
+          </article>
+          <article class="person">
+            <img class="person-photo--center" src="assets/images/yujie_xie.jpg" alt="Yujie Xie" loading="lazy">
+            <div><h3>Yujie Xie</h3><p>Undergraduate Student</p><p class="member-bio">To be determined.</p></div>
           </article>
         </div>
       </div>
@@ -177,13 +260,42 @@
 
     <section id="publications" class="section publication-section">
       <div class="container publication-layout">
-        <div>
+        <div class="publication-heading">
           <p class="section-kicker">Research output</p>
           <h2>Publications</h2>
+          <p class="publication-intro">Selected publications from our work in space robotics, autonomous systems, intelligent control, and planetary exploration.</p>
         </div>
-        <div class="publication-note">
-          <p>Our verified publication list is being prepared.</p>
-          <p class="muted">Paper titles, authors, venues, years, and DOI links will be added here after verification.</p>
+        <div class="publication-list">
+          <article class="publication-item">
+            <p class="publication-meta">Chinese Journal of Aeronautics · 2026</p>
+            <h3>A bio-inspired dual-mode gripper for a climbing robot in microgravity</h3>
+            <p>Zhiyue Fang, Yongxu Lu, Zhaowei Zhang, Yuanzheng Tian, Wei Zhang, and Chongbin Guo</p>
+          </article>
+          <article class="publication-item">
+            <p class="publication-meta">Robotica · 2025</p>
+            <h3>Multi-objective optimal trajectory planning for the experiment cabinet robot manipulator in the space station</h3>
+            <p>Yongxu Lu, Yansong Xu, Wei Zhang, Junlin Li, Feng Li, and Xiaoyuan Liu </p>
+          </article>
+          <article class="publication-item">
+            <p class="publication-meta">ISEAE · 2025</p>
+            <h3>Robust motion of quadruped robot on slippery surface based on virtual model control</h3>
+            <p>Yaowei Wang, Yongxu Lu, Junlin Li, Zhiyue Fang, and Ran Liu</p>
+          </article>
+          <details class="publication-more">
+            <summary><span>View more publications</span><span aria-hidden="true"></span></summary>
+            <div class="publication-more-content">
+              <article class="publication-item">
+                <p class="publication-meta">RICAI · 2026</p>
+                <h3>Temporal Cross-Attention Re-ranking with Spatial Multi-scale Features for Shortlist Disambiguation in Planetary-Analogue Visual Place Recognition</h3>
+                <p>Yilin Fang, Yuanzheng Tian, Junlin Li, and Shengyong Zhang</p>
+              </article>
+              <article class="publication-item">
+                <p class="publication-meta">ICAUS · 2025</p>
+                <h3>Research on Motion Control Method of Space Crawling Robot Based on Intelligent Algorithm</h3>
+                <p>Shaojie Wang, Wei Zhang, Sheng Gao, Qingchao Wang, and Yuanzheng Tian</p>
+              </article>
+            </div>
+          </details>
         </div>
       </div>
     </section>
@@ -193,11 +305,21 @@
         <div>
           <p class="section-kicker">Contact</p>
           <h2>Work with SAMER Lab</h2>
-          <p>For collaboration, student opportunities, and research enquiries, please contact the laboratory through its official institutional channel.</p>
+          <p>For collaboration, student opportunities, and research enquiries, please contact the laboratory through the channels below.</p>
         </div>
         <div class="contact-card">
           <p class="contact-label">Contact information</p>
-          <p>Official address and email will be published after confirmation.</p>
+          <div class="contact-details">
+            <div class="contact-item">
+              <span>Email</span>
+              <a href="mailto:fangzhiyue@sia.cn">fangzhiyue@sia.cn</a>
+              <a href="mailto:wangyaowei@sia.cn">wangyaowei@sia.cn</a>
+            </div>
+            <div class="contact-item">
+              <span>Phone</span>
+              <a href="tel:+8618371391156">+86 18371391156</a>
+            </div>
+          </div>
         </div>
       </div>
     </section>
