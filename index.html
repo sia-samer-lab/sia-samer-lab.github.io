@@ -1,90 +1,213 @@
-<!DOCTYPE html>
-<html lang="zh-CN">
+<!doctype html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <title>SIA SAMER Lab</title>
-
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, "Microsoft YaHei", sans-serif;
-      color: #1f2937;
-      background: #f8fafc;
-    }
-
-    header {
-      padding: 80px 20px;
-      text-align: center;
-      color: white;
-      background: linear-gradient(135deg, #123c69, #1d70a2);
-    }
-
-    header h1 {
-      margin: 0 0 16px;
-      font-size: 48px;
-    }
-
-    header p {
-      margin: 0;
-      font-size: 20px;
-    }
-
-    main {
-      max-width: 960px;
-      margin: 0 auto;
-      padding: 50px 20px;
-    }
-
-    section {
-      margin-bottom: 40px;
-      padding: 30px;
-      background: white;
-      border-radius: 12px;
-      box-shadow: 0 4px 18px rgba(0, 0, 0, 0.06);
-    }
-
-    h2 {
-      color: #123c69;
-    }
-
-    footer {
-      padding: 25px;
-      text-align: center;
-      color: #64748b;
-    }
-  </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="The official website of the Space Autonomous Manipulation and Exploration Robotics Lab (SAMER Lab).">
+  <meta name="theme-color" content="#071521">
+  <title>SAMER Lab | Space Autonomous Manipulation and Exploration Robotics</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script src="assets/js/main.js" defer></script>
 </head>
-
 <body>
-  <header>
-    <h1>SIA SAMER Lab</h1>
-    <p>实验室官方网站正在建设中</p>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+
+  <header class="site-header" data-header>
+    <div class="container nav-wrap">
+      <a class="brand" href="#home" aria-label="SAMER Lab home">
+        <img src="assets/images/lab_logo.png" alt="SAMER Lab">
+      </a>
+
+      <button class="menu-button" type="button" aria-expanded="false" aria-controls="site-navigation" data-menu-button>
+        <span class="menu-icon" aria-hidden="true"></span>
+        <span class="sr-only">Open navigation</span>
+      </button>
+
+      <nav id="site-navigation" class="site-nav" aria-label="Primary navigation" data-navigation>
+        <a href="#about">About</a>
+        <a href="#research">Research</a>
+        <a href="#team">Team</a>
+        <a href="#publications">Publications</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
   </header>
 
-  <main>
-    <section>
-      <h2>关于我们</h2>
-      <p>
-        欢迎访问 SIA SAMER Lab 官方网站。
-        我们致力于开展前沿科学研究与技术创新。
-      </p>
+  <main id="main-content">
+    <section id="home" class="hero">
+      <div class="hero-overlay"></div>
+      <div class="container hero-content">
+        <p class="eyebrow">Space Robotics · Autonomous Systems · Exploration</p>
+        <h1>Space Autonomous Manipulation and Exploration Robotics Lab</h1>
+        <p class="hero-lead">Advancing autonomous robotic systems for planetary exploration and orbital operations.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#research">Explore our research</a>
+          <a class="button button-secondary" href="#team">Meet the team</a>
+        </div>
+      </div>
+      <a class="scroll-cue" href="#about" aria-label="Continue to About section">Scroll</a>
     </section>
 
-    <section>
-      <h2>研究方向</h2>
-      <p>研究方向和实验室成果将在这里陆续更新。</p>
+    <section id="about" class="section section-light">
+      <div class="container narrow">
+        <p class="section-kicker">About us</p>
+        <h2>Robotics for challenging space environments</h2>
+        <p class="section-intro">
+          The Space Autonomous Manipulation and Exploration Robotics (SAMER) Lab develops robotic systems for space applications. Our research focuses on autonomous manipulation, mobility, and exploration technologies that enable robots to operate effectively in challenging space environments.
+        </p>
+      </div>
     </section>
 
-    <section>
-      <h2>联系我们</h2>
-      <p>联系信息将在这里更新。</p>
+    <section class="feature-section" aria-label="Core research themes">
+      <article class="feature feature-dark">
+        <img src="assets/images/space_manipulation.jpg" alt="A robotic system for space manipulation" loading="lazy">
+        <div class="feature-shade"></div>
+        <div class="feature-copy">
+          <p class="feature-number">01</p>
+          <h2>Space servicing and manipulation</h2>
+          <p>Robotic systems for in-orbit servicing, assembly, maintenance, refueling, repair, and debris mitigation.</p>
+        </div>
+      </article>
+
+      <article class="feature feature-blue">
+        <img src="assets/images/planetary_detection.jpg" alt="A robotic system for planetary exploration" loading="lazy">
+        <div class="feature-shade"></div>
+        <div class="feature-copy">
+          <p class="feature-number">02</p>
+          <h2>Planetary exploration and detection</h2>
+          <p>Autonomous robotic systems for navigation, scientific investigation, sampling, and multi-robot exploration.</p>
+        </div>
+      </article>
+    </section>
+
+    <section id="research" class="section section-dark">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">What we study</p>
+            <h2>Research areas</h2>
+          </div>
+          <p>Our work connects robotics, autonomy, intelligent perception, and space engineering.</p>
+        </div>
+
+        <div class="research-grid">
+          <article class="research-card">
+            <span>01</span>
+            <h3>Autonomous manipulation</h3>
+            <p>Algorithms and robotic systems for assembly, maintenance, and sample handling with limited human intervention.</p>
+          </article>
+          <article class="research-card">
+            <span>02</span>
+            <h3>Planetary exploration</h3>
+            <p>Robust robotic platforms for autonomous navigation and scientific investigation on planetary surfaces.</p>
+          </article>
+          <article class="research-card">
+            <span>03</span>
+            <h3>AI for space robotics</h3>
+            <p>Machine learning, perception, and decision-making methods for uncertain and unstructured environments.</p>
+          </article>
+          <article class="research-card">
+            <span>04</span>
+            <h3>Orbital servicing</h3>
+            <p>Robotic technologies for satellite servicing, repair, refueling, and responsible debris removal.</p>
+          </article>
+          <article class="research-card">
+            <span>05</span>
+            <h3>Extreme-environment robotics</h3>
+            <p>Mechanisms and control strategies designed for vacuum, radiation, temperature extremes, and difficult terrain.</p>
+          </article>
+          <article class="research-card">
+            <span>06</span>
+            <h3>Multi-robot systems</h3>
+            <p>Coordination and collaboration strategies for teams of robots carrying out complex space missions.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="team" class="section section-light">
+      <div class="container">
+        <div class="section-heading dark-heading">
+          <div>
+            <p class="section-kicker">Our people</p>
+            <h2>Meet the team</h2>
+          </div>
+          <p>Researchers working across space robotics, intelligent systems, and autonomous exploration.</p>
+        </div>
+
+        <div class="leadership">
+          <article class="person person-lead">
+            <img src="assets/images/weijia_zhou.png" alt="Prof. Weijia Zhou" loading="lazy">
+            <div>
+              <p class="person-role">Director &amp; Principal Investigator</p>
+              <h3>Prof. Weijia Zhou</h3>
+            </div>
+          </article>
+        </div>
+
+        <h3 class="group-title">Research assistants</h3>
+        <div class="people-grid">
+          <article class="person">
+            <img src="assets/images/zhiyue_fang.jpg" alt="Zhiyue Fang" loading="lazy">
+            <div><h3>Zhiyue Fang</h3><p>PhD Candidate</p></div>
+          </article>
+          <article class="person">
+            <img src="assets/images/yaowei_wang.jpg" alt="Yaowei Wang" loading="lazy">
+            <div><h3>Yaowei Wang</h3><p>PhD Candidate</p></div>
+          </article>
+          <article class="person">
+            <img src="assets/images/ran_liu.jpg" alt="Ran Liu" loading="lazy">
+            <div><h3>Ran Liu</h3><p>PhD Candidate</p></div>
+          </article>
+          <article class="person">
+            <img src="assets/images/yongxu_lu.jpg" alt="Yongxu Lu" loading="lazy">
+            <div><h3>Yongxu Lu</h3><p>Master Student</p></div>
+          </article>
+          <article class="person">
+            <img src="assets/images/shaojie_wang.jpg" alt="Shaojie Wang" loading="lazy">
+            <div><h3>Shaojie Wang</h3><p>Master Student</p></div>
+          </article>
+          <article class="person">
+            <img src="assets/images/fuhao_li.jpg" alt="Fuhao Li" loading="lazy">
+            <div><h3>Fuhao Li</h3><p>Master Student</p></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="publications" class="section publication-section">
+      <div class="container publication-layout">
+        <div>
+          <p class="section-kicker">Research output</p>
+          <h2>Publications</h2>
+        </div>
+        <div class="publication-note">
+          <p>Our verified publication list is being prepared.</p>
+          <p class="muted">Paper titles, authors, venues, years, and DOI links will be added here after verification.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact-section">
+      <div class="container contact-layout">
+        <div>
+          <p class="section-kicker">Contact</p>
+          <h2>Work with SAMER Lab</h2>
+          <p>For collaboration, student opportunities, and research enquiries, please contact the laboratory through its official institutional channel.</p>
+        </div>
+        <div class="contact-card">
+          <p class="contact-label">Contact information</p>
+          <p>Official address and email will be published after confirmation.</p>
+        </div>
+      </div>
     </section>
   </main>
 
-  <footer>
-    © 2026 SIA SAMER Lab
+  <footer class="site-footer">
+    <div class="container footer-layout">
+      <img src="assets/images/lab_logo.png" alt="SAMER Lab">
+      <p>&copy; <span data-current-year>2026</span> SAMER Lab. All rights reserved.</p>
+    </div>
   </footer>
 </body>
 </html>
