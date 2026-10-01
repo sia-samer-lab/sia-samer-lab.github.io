@@ -1,6 +1,6 @@
 # SAMER Lab website
 
-Static website prepared for GitHub Pages.
+Static website prepared for GitHub Pages. You can visit it on href[https://sia-samer-lab.github.io].
 
 ## Publish
 
